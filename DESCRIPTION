@@ -1,0 +1,20 @@
+Package: TAA
+Type: Package
+Title: Technical Analysis API
+Version: 1.0
+Date: 2015-01-30
+Author: Jordan Li
+Maintainer: Jordan Li <twistedogic@gmail.com>
+Description: Opencpu to TA binding
+License: GPL
+Depends:
+    quantmod,
+    TTR,
+    RJSONIO,
+    xts
+Imports:
+    quantmod,
+    TTR,
+    RJSONIO,
+    xts
+Suggests: opencpu (>= 1.2)
