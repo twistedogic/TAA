@@ -16,7 +16,7 @@ TAA <- function(id='0001.HK', endPoint = 'http://10.0.0.114:3000/api/hist/desc/'
   res <- DF[apply(DF[c(3:7)],1,function(z) !any(z==0)),]
   data <- as.xts(res[,3:7],order.by=as.Date(res$Date),unique=T)
   checkNull <- as.numeric(Cl(data))
-  if (length(na.omit(checkNull)) > 200){
+  if (length(na.omit(checkNull)) > 250){
     o <- as.vector(data[,1])
     tatitle <- colnames(data)
     CL <- Cl(data)
